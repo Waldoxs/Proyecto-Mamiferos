@@ -6,8 +6,10 @@ abstract public class Canino extends Mamifero {
     protected String color;
     protected float tamanoColmillos;
 
-    public Canino(String habitat, String nombreCientifico, float peso, float largo, float altura) {
+    public Canino(String habitat, String nombreCientifico, float peso, float largo, float altura, String color, float tamanoColmillos) {
         super(habitat, nombreCientifico, peso, largo, altura);
+        this.color = color;
+        this.tamanoColmillos = tamanoColmillos;
     }
 
     public String getColor() {
